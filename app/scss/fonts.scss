@@ -1,0 +1,62 @@
+@font-face {
+    font-family: 'oswaldbold-webfont';
+    font-weight: 700;
+    font-style: normal;
+    src: local('oswaldbold-webfont'),
+        url('../fonts/oswaldbold-webfont.woff2') format('woff2');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'oswaldmedium-webfont';
+    font-weight: 500;
+    font-style: normal;
+    src: local('oswaldmedium-webfont'),
+        url('../fonts/oswaldmedium-webfont.woff2') format('woff2');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ralewayextrabold-webfont';
+    font-weight: 800;
+    font-style: normal;
+    src: local('ralewayextrabold-webfont'),
+        url('../fonts/ralewayextrabold-webfont.woff2') format('woff2');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ralewaymedium-webfont';
+    font-weight: 500;
+    font-style: normal;
+    src: local('ralewaymedium-webfont'),
+        url('../fonts/ralewaymedium-webfont.woff2') format('woff2');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'rewayregular-webfont';
+    font-weight: 400;
+    font-style: normal;
+    src: local('ralewayregular-webfont'),
+        url('../fonts/ralewayregular-webfont.woff2') format('woff2');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'rewaysemibolt';
+    font-weight: 600;
+    font-style: normal;
+    src: local('ralewayregular-webfont'),
+        url('../fonts/ralewaysemibold-webfont.woff2');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'robotomedium-webfont';
+    font-weight: 500;
+    font-style: normal;
+    src: local('robotomedium-webfont'),
+        url('../fonts/robotomedium-webfont.woff2') format('woff2');
+    font-family: swap;
+}

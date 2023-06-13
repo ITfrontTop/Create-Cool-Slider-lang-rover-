@@ -1,0 +1,8 @@
+body, html {
+    height: 100%;
+}
+
+p {
+    @extend %raleway-400;
+    color: $textcolor;
+}
