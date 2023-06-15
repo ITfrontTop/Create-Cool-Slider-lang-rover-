@@ -56,6 +56,7 @@ function sprite() {
 function scripts() {
     return src([
         'node_modules/swiper/swiper-bundle.js',
+        'node_modules/gsap/dist/gsap.min.js',
         'app/js/main.js'
     ])
         .pipe(concat('main.min.js'))
