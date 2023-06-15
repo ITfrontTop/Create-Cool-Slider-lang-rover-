@@ -467,5 +467,16 @@
     }
 }
 
-
+.slider-gear {
+    width: 470px;
+    height: 470px;
+    position: absolute;
+    background-image: url('../images/gear.svg');
+    background-size: cover;
+    background-position: center;
+    top: 50%;
+    margin-top: -270px;
+    z-index: 2;
+    right: calc(23.8% - 235px);
+}
 

@@ -1,6 +1,7 @@
 // import { Swiper, Parallax, Mousewheel, Controller} from 'swiper';
 // Swiper.use([ Parallax, Mousewheel, Controller ])
 
+// import { gsap, Power2 } from "gsap";
 
 const swiperIMG = new Swiper('.slider-img', {
     loop: false,
@@ -31,3 +32,19 @@ const swiperText = new Swiper('.slider-text', {
 
 swiperIMG.controller.control = swiperText
 swiperText.controller.control = swiperIMG
+
+let gear = document.querySelector('.slider-gear');
+
+swiperText.on('slideNextTransitionStart', function() {
+    gsap.to(gear, 2.8, {
+        rotation: '+=40',
+        ease: Power2.easeOut
+    })
+})
+
+swiperText.on('slidePrevTransitionStart', function() {
+    gsap.to(gear, 2.8, {
+        rotation: '-=40',
+        ease: Power2.easeOut
+    })
+})
