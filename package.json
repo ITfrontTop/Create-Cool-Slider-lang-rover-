@@ -27,6 +27,7 @@
     "swiper": "^9.4.0"
   },
   "dependencies": {
-    "gsap": "^3.12.1"
+    "gsap": "^3.12.1",
+    "micromodal": "^0.4.10"
   }
 }
