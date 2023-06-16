@@ -57,6 +57,7 @@ function scripts() {
     return src([
         'node_modules/swiper/swiper-bundle.js',
         'node_modules/gsap/dist/gsap.min.js',
+        'node_modules/micromodal/dist/micromodal.js',
         'app/js/main.js'
     ])
         .pipe(concat('main.min.js'))

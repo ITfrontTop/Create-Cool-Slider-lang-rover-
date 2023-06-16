@@ -75,7 +75,7 @@
                                 <p class="slider-text__desc">
                                     Выберем и подберём для вас любой внедорожник в кратчайшие сроки, с учётом всех ваших пожеланий и всех необходимых потребностей.
                                 </p>
-                                <button class="button slider-text__button">
+                                <button data-micromodal-open="modal-1" class="button slider-text__button">
                                     <span>Оставить заявку</span>
                                 </button>
                             </div>
@@ -89,7 +89,7 @@
                                 <p class="slider-text__desc">
                                     Все автомобили мы подбираем индивидуально для каждого клиента или покупателя и с трепетом относимся к результату нашей работы.
                                 </p>
-                                <button class="button slider-text__button">
+                                <button data-micromodal-open="modal-1" class="button slider-text__button">
                                     <span>Оставить заявку</span>
                                 </button>
                             </div>
@@ -103,7 +103,7 @@
                                 <p class="slider-text__desc">
                                     В нашем модельном ряду имеются модели сотен различных внедорожников, которые удовлетворят даже самого требовательного клиента.
                                 </p>
-                                <button class="button slider-text__button">
+                                <button data-micromodal-open="modal-1" class="button slider-text__button">
                                     <span>Оставить заявку</span>
                                 </button>
                             </div>
@@ -163,6 +163,16 @@
                     </div>
                 </div>
 
+                <div class="slider-pagination-count">
+                    <span class="current">01</span> / <span class="total"></span>
+                </div>
+                <div class="slider-pagination-current">
+                    <span class="slider-pagination-current__num">01</span>
+                </div>
+                <div class="slider-pagination__dot-inner">
+                    <span class="slider-pagination-current__dot">.</span>
+                </div>
+
                 <div class="slider-gear"></div>
 
             </div>
@@ -170,6 +180,32 @@
         </div>
 
     </header>
+
+    <div class="modal micromodal-slide" id="modal-1" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+            <div  class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title" >
+                <header class="modal__header">
+                    <h2 class="modal__title" id="modal-1-title">
+                        Оставить заявку
+                    </h2>
+
+                    <button class="modal__close" aria-label="Закрыть окно" data-micromodal-close></button>
+                </header>
+                <form action="#">
+                    <main class="modal__content">
+                        <input class="form-input modal__input" type="text" name="VH-Name" placeholder="Ваше имя...">
+                        <input class="form-input modal__input" type="text" name="VH-Phone" placeholder="Ваше телефон...">
+                        <textarea class="form-input modal__input" name="Message" placeholder="Сообщение..."></textarea> 
+                    </main>
+                    <footer class="modal-footer">
+                        <button class="button">
+                            <span>Отправить</span>
+                        </button>
+                    </footer>
+                </form>
+            </div>
+        </div>
+    </div>
 
     <script src="js/main.min.js"></script>
 </body>
